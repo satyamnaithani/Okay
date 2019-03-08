@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>Roomer</title>
+	<link rel="stylesheet" type="text/css" href="index_styles.css">
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" href="animate.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+	<div id="contain" class="animated fadeInUpBig">
+<div id="logo">
+	<a href="#"><img src="logo.png" width="250" height="250"></a>
+</div>
+<hr>
+<div id="anchor">
+<a href="#" onclick="return register()">Register</a>
+<a href="#"  onclick="return login()">LogIn</a>
+</div>
+</div>
+
+
+
+<div id="Login" class="animated fadeInRightBig" style="display: none;">
+<div id="logo">
+	<a href="#"><img src="logo.png" width="60" height="60"></a>
+</div>
+<hr>
+ <div id="form">
+  <form action="LoginServlet" method="post">
+    <label for="fname">Login ID</label>
+    <input type="text" id="fname" name="email" placeholder="Email">
+
+    <label for="lname">Password</label>
+    <input type="password" id="lname" name="pass" placeholder="Password">
+  
+    <input type="submit" value="Login">
+  </form>
+  <a style="text-decoration: none; font-size: 15px;" href="#" onclick="return register()">Create Account</a>
+</div>
+</div>
+
+
+
+<div id="Register"class="animated fadeInLeftBig" style="display: none;">
+<div id="logo">
+	<a href="#"><img src="logo.png" width="60" height="60"></a>
+</div>
+<hr>
+<div id="form">
+  <form action="RegisterServlet" method="post">
+    
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="name" placeholder="Full Name">
+
+    <label for="country">Email</label>
+    <input type="text" id="country" name="email" placeholder="Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@mailer.com">
+
+    <label for="pswd">Password</label>
+    <input type="password" id="pswd" name="pass" placeholder="Password"><br>
+
+    <label for="dob">Date Of Birth</label>
+    <input type="date" id="dob" name="dob">
+
+     <label for="city">City</label>
+    <input type="text" id="city" name="city" placeholder="Enter City">
+
+     <label for="state">State</label>
+    <input type="text" id="state" name="state" placeholder="Enter State">
+
+    <label for="country">Country</label>
+    <input type="text" id="country" name="country" placeholder="Enter Country">
+
+     <label for="contact">Contact</label>
+    <input type="text" id="contact" name="contact" placeholder="Contact Number">
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+  </form>
+  <a style="text-decoration: none; font-size: 15px;" href="#" onclick="return login()">Already a User?</a>
+</div>
+
+</div>
+
+
+
+</body>
+</html>
